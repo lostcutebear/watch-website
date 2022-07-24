@@ -10,6 +10,16 @@ HELLO
 
 	<script>
 		const hello = 'Hello!';
+		const root = document.getElementById('root');
+		const h1 = document.createElement('h1').innerText = 'Hello, Git!';
+		root.appendChild(h1);
+		function fetchReq(url) {
+			fetch(url)
+			.then(data => data.json())
+			.then(console.log(data))
+		}
+
+		fetchReq('htdpfdspfpdsfpdspfds');
 	</script>
 
 
