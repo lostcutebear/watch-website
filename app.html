@@ -7,7 +7,16 @@ HELLO
 	</h6>
 	<div id="root">
 	</div>
-
+	<form action="">
+		<label for="username">Your name</label>
+		<input type="text" name="username" placeholder="Text" id="username">
+		<label for="userage">Your age</label>
+		<input type="number" placeholder="Your age" name="userage" id="userage">
+		<label for="password">Your password</label>
+		<input type="password" placeholder="Your password" name="password" id="password">
+		<input type="radio" name="gender" value="male">M
+		<input type="radio" name="gender" value="female">F
+	</form>
 	<script>
 		const hello = 'Hello!';
 		const root = document.getElementById('root');
