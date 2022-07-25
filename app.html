@@ -8,14 +8,25 @@ HELLO
 	<div id="root">
 	</div>
 	<form action="">
-		<label for="username">Your name</label>
-		<input type="text" name="username" placeholder="Text" id="username">
-		<label for="userage">Your age</label>
-		<input type="number" placeholder="Your age" name="userage" id="userage">
-		<label for="password">Your password</label>
-		<input type="password" placeholder="Your password" name="password" id="password">
+		<fieldset>
+			<legend>Person Info</legend>
+			<label for="username">Your name</label>
+			<input type="text" required name="username" placeholder="Text" id="username">
+			<label for="userage">Your age</label>
+			<input type="number" required placeholder="Your age" name="userage" id="userage">
+			<label for="password">Your password</label>
+			<input type="password" placeholder="Your password" name="password" id="password">
+		</fieldset>
 		<input type="radio" name="gender" value="male">M
 		<input type="radio" name="gender" value="female">F
+		<label for="remember_date">Remember me</label>
+		<input type="checkbox" name="remember_date" id="remember_date">
+		<select name="city" id="">
+			<option value="toronto">Toronto</option>
+			<option value="vancouver">Vancouver</option>
+		</select>
+		<label for="message">Message</label>
+		<textarea name="message" id="message" cols="30" rows="10"></textarea>
 	</form>
 	<script>
 		const hello = 'Hello!';
